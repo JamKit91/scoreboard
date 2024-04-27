@@ -1,0 +1,31 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&    display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <h3 class="poppins-bold">HOME</h3>
+                <h4 id="home-score" class="score poppins-bold">0</h4>
+                <div class="points">
+                    <p onclick="homeAddOne()" class="points-btn poppins-regular">+1</p>
+                    <p onclick="homeAddTwo()" class="points-btn poppins-regular">+2</p>
+                    <p onclick="homeAddThree()" class="points-btn poppins-regular">+3</p>
+                </div>
+            </div>
+            <div class="column">
+                <h3 class="poppins-bold">GUEST</h3>
+                <h4 id="away-score" class="score poppins-bold">0</h4>
+                <div class="points">
+                    <p onclick="awayAddOne()" class="points-btn poppins-regular">+1</p>
+                    <p onclick="awayAddTwo()" class="points-btn poppins-regular">+2</p>
+                    <p onclick="awayAddThree()" class="points-btn poppins-regular">+3</p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
